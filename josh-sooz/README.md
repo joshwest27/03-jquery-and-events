@@ -1,7 +1,7 @@
 # Kilovolt Blog - Lab 03
 
 **Author**: Josh West and Suzanne Richman
-**Version**: 1.0.2 (increment the patch/fix version number up if you make more commits past your first submission)
+**Version**: 1.0.3 (increment the patch/fix version number up if you make more commits past your first submission)
 
 ## Overview
 
@@ -31,7 +31,7 @@ We used IcoMoon icon font for navigation icons. We included the jQuery library. 
 
 02-15-2018 9:50 am - commit to add and move readme, add normalize css, and update index.html. also updated css for improved styling.
 
-
+02-15-2018 10:45 am - commit updates to articleView.js
 
 ## Credits and Collaborations
 
