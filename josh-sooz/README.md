@@ -1,7 +1,7 @@
 # Kilovolt Blog - Lab 03
 
 **Author**: Josh West and Suzanne Richman
-**Version**: 1.0.3 (increment the patch/fix version number up if you make more commits past your first submission)
+**Version**: 1.0.5 (increment the patch/fix version number up if you make more commits past your first submission)
 
 ## Overview
 
@@ -29,9 +29,15 @@ We used IcoMoon icon font for navigation icons. We included the jQuery library. 
 
 ## Change Log
 
-02-15-2018 9:50 am - commit to add and move readme, add normalize css, and update index.html. also updated css for improved styling.
+02-15-2018 9:50 am - Commit to add and move readme, add normalize css, and update index.html. also updated css for improved styling.
 
-02-15-2018 10:45 am - commit updates to articleView.js
+02-15-2018 10:45 am - Commit updates to articleView.js
+
+02-15-2018 12:00 pm - Commit updates to articleView.js and article.js working on filter population and handling.
+
+02-15-2018 12:53 pm - Commit updates to articleView.js and article.js working on filter population and handling and attempted nav. Only got filter population working, but it breaks when filter handler is commented in.
+
+
 
 ## Credits and Collaborations
 
