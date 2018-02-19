@@ -84,7 +84,7 @@ articleView.handleMainNav = function() {
 
     // REVIEW: Now trigger a click on the first .tab element, to set up the page.
     $('.main-nav .tab:first').click();
-    // $('.tab-content').show();
+    $('.tab-content').show();
   });
 
 };
@@ -94,16 +94,26 @@ articleView.setTeasers = function() {
   // REVIEW: Hide elements beyond the first 2 in any article body.
   $('.article-body *:nth-of-type(n+2)').hide();
 
-  // TODO: Add an event handler to reveal all the hidden elements, when the .read-on link is clicked. You can go ahead and hide the "Read On" link once it has been clicked. Be sure to prevent the default link-click action!
+  // DONE: Add an event handler to reveal all the hidden elements, when the .read-on link is clicked. You can go ahead and hide the "Read On" link once it has been clicked. Be sure to prevent the default link-click action!
   $('article').on('click', 'a.read-on', function() {
   // Ideally, we'd attach this as just one event handler on the #articles section, and let it process (in other words... delegate) any .read-on clicks that happen within child nodes.
-});
+    if($(this).text() === 'Read on →'){
+      $(this).parent().find('*').fadeIn();
+      $(this).html('Show less &larr;');
+    } else{
+      $('body').fadeIn();
+      $(this).html('Read on &rarr;');
+      $(this).text('Read on &rarr;');
+      $(this).parent().find('.article-body *:nth-of-type(n+2)').show();
+    }
+  });
+};
 
-// TODO: Call all of the above functions, once we are sure the DOM is ready.
+// DONE: Call all of the above functions, once we are sure the DOM is ready.
 $(document).ready(function(){
   articleView.populateFilters();
   articleView.handleCategoryFilter();
   articleView.handleAuthorFilter();
   articleView.handleMainNav();
-  // articleView.setTeasers();
+  articleView.setTeasers();
 })
