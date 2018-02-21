@@ -9,7 +9,7 @@ articleView.populateFilters = function() {
     let authorName, category, optionTag;
     if (!$(this).hasClass('template')) {
       // REVIEW: We need to take every author name from the page, and make it an option in the Author filter.
-      // To do so, Build an <option> DOM element that we can append to the author <select> element.
+      // DONE: Build an <option> DOM element that we can append to the author <select> element.
       // Start by grabbing the author's name from `this` article element, and then use that bit of text to create the option tag (in a variable named `optionTag`) that we can append to the #author-filter select element.
       authorName = $(this).attr('data-author');
       // DONE: Refactor this concatenation using a template literal.
